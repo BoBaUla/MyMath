@@ -1,0 +1,6 @@
+E:\VisualStudio\Projekte\KryptoAlg\MyMath\bin\Debug\MyMath.dll
+E:\VisualStudio\Projekte\KryptoAlg\MyMath\bin\Debug\MyMath.pdb
+E:\VisualStudio\Projekte\KryptoAlg\MyMath\obj\Debug\MyMath.csprojResolveAssemblyReference.cache
+E:\VisualStudio\Projekte\KryptoAlg\MyMath\obj\Debug\MyMath.csproj.CoreCompileInputs.cache
+E:\VisualStudio\Projekte\KryptoAlg\MyMath\obj\Debug\MyMath.dll
+E:\VisualStudio\Projekte\KryptoAlg\MyMath\obj\Debug\MyMath.pdb
