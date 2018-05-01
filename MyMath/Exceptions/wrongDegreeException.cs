@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyMath
+namespace MyMath.Exceptions
 {
-    public class Class1
+    public class wrongDegreeException : Exception
     {
+
     }
 }
