@@ -12,11 +12,11 @@ namespace MyMath.Spline
     {
         public void AddConditionalValues(ref Matrix matrix)
         {
-            int dimY = matrix.Values.GetLength(0);
-            int dimX = matrix.Values.GetLength(1);
+            int dimY = matrix.GetColumns();
+            int dimX = matrix.GetRows();
 
-            matrix.addValue(2, dimY - 2, 1);
-            matrix.addValue(dimX - 3, dimY - 1, 1);
+            matrix.AddValue(dimY - 2 ,        2, 1);
+            matrix.AddValue( dimY - 1, dimX - 3, 1);
 
         }
     }

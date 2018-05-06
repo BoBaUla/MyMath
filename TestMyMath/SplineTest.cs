@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MyMath.Exceptions;
 using MyMath.Typen;
@@ -23,23 +24,14 @@ namespace TestMyMath
             TSplineCubic spline = new TSplineCubic();
             spline.X0Value = 1;
             spline.X1Value = 1;
-            spline.Y0Values = new double[]{ 1,2,3};
-            spline.Y1Values = new double[] { 1, 2, 3 };
+            
         }
 
 
         [TestMethod]
         public void TestSetSplineException()
         {
-            TSplineCubic spline = new TSplineCubic();
-            try
-            {
-                spline.Y1Values = new double[] { 1, 2 };
-            }
-            catch (wrongDegreeException e)
-            {
-
-            }
+         
         }
 
 
@@ -48,7 +40,7 @@ namespace TestMyMath
         {
             TSplineCubic spline = new TSplineCubic();
             spline.X0Value = 1;
-            spline.Coeefficiens = new double[] { 1, 2, 3, 4 };
+            spline.Coeefficiens = new List<double>() { 1, 2, 3, 4 };
             Func<double, double> spl = spline.GetSpline();
             if (spl(0) != -2)
                 throw new Exception("Mistake in calculation");
@@ -59,7 +51,7 @@ namespace TestMyMath
         {
             TSplineCubic spline = new TSplineCubic();
             spline.X0Value = 1;
-            spline.Coeefficiens = new double[] { 1, 2, 3, 4 };
+            spline.Coeefficiens = new List<double>() { 1, 2, 3, 4 };
             Func<double, double> spl = spline.GetSplineFirstDerivat();
             if (spl(0) != 8)
                 throw new Exception("Mistake in calculation" + spl(0));
@@ -70,7 +62,7 @@ namespace TestMyMath
         {
             TSplineCubic spline = new TSplineCubic();
             spline.X0Value = 1;
-            spline.Coeefficiens = new double[] { 1, 2, 3, 4 };
+            spline.Coeefficiens = new List<double>(){ 1, 2, 3, 4 };
             Func<double, double> spl = spline.GetSplineSecondDerivat();
             if (spl(0) != -18)
                 throw new Exception("Mistake in calculation" + spl(0));

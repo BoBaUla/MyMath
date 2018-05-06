@@ -45,12 +45,14 @@
   <ItemGroup>
     <Compile Include="Exceptions\wrongCountOfElementsException.cs" />
     <Compile Include="Exceptions\wrongDegreeException.cs" />
+    <Compile Include="Interfeces\ASpline.cs" />
     <Compile Include="Interfeces\ISplineCondition.cs" />
     <Compile Include="Interpolation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spline\NaturalSpline.cs" />
+    <Compile Include="SplineCondition\NaturalSpline.cs" />
     <Compile Include="Typen\TDataPoint.cs" />
     <Compile Include="Typen\TSplineCubic.cs" />
+    <Compile Include="Typen\TSplineFunction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
