@@ -49,6 +49,7 @@
     <Compile Include="Interfeces\ISplineCondition.cs" />
     <Compile Include="Interpolation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplineCondition\ClampedSpline.cs" />
     <Compile Include="SplineCondition\NaturalSpline.cs" />
     <Compile Include="Typen\TDataPoint.cs" />
     <Compile Include="Typen\TSplineCubic.cs" />

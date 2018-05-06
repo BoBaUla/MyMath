@@ -10,7 +10,7 @@ namespace MyMath.Spline
 {
     class NaturalSpline : ISplineCondition
     {
-        public void AddConditionalValues(ref Matrix matrix)
+        public void AddConditionalValues(ref Matrix matrix, double leftEnd = 0, double rightEnd = 0)
         {
             int dimY = matrix.GetColumns();
             int dimX = matrix.GetRows();

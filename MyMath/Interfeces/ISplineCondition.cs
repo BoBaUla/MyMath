@@ -9,6 +9,6 @@ namespace MyMath.Interfeces
 {
     public interface ISplineCondition
     {
-        void AddConditionalValues(ref Matrix matrix);
+        void AddConditionalValues(ref Matrix matrix, double leftEnd, double rightEnd);
     }
 }

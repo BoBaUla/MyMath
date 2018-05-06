@@ -21,7 +21,10 @@ namespace MyMath
         List<TDataPoint> _values = new List<TDataPoint>();
         
         ISplineCondition _condition = new NaturalSpline();
-        List<TSplineCubic> _spline = new List<TSplineCubic>(); 
+        List<TSplineCubic> _spline = new List<TSplineCubic>();
+
+        double _leftCondition = 0;
+        double _rightCondition = 0;
 
         public int Count
         {
@@ -41,6 +44,8 @@ namespace MyMath
             private set {; }
         }
 
+        public AApproximationSolver<Matrix, Matrix> Solver { get; set; } = new TransposedGaussSeidelApproximation(10);
+        
         public void AddValue(TDataPoint value)
         {
             if (!_values.Contains(value))
@@ -57,12 +62,12 @@ namespace MyMath
            
         }
         
-        public Interpolation(ISplineCondition cond)
+        public Interpolation(ISplineCondition cond, double leftCondition, double rightCondition)
         {
             _condition = cond;
+            _leftCondition = leftCondition;
+            _rightCondition = rightCondition;
         }
-
-        public AApproximationSolver<Matrix, Matrix> Solver { get; set; } = new TransposedGaussSeidelApproximation(10);
 
         private double deltaXPow(TDataPoint x0, TDataPoint x1, int pow)
         {
@@ -147,7 +152,7 @@ namespace MyMath
                             spalte: 4 + 2 + zeile * 4,
                             value: -1);
             }
-            _condition.AddConditionalValues(ref result);
+            _condition.AddConditionalValues(ref result,_leftCondition,_rightCondition);
             return result;
         }
 
