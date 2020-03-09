@@ -12,3 +12,10 @@ E:\VisualStudio\Projekte\MyMath\MyMath\obj\Debug\MyMath.pdb
 E:\VisualStudio\Projekte\MyMath\MyMath\bin\Debug\Mathematik.dll
 E:\VisualStudio\Projekte\MyMath\MyMath\bin\Debug\Mathematik.pdb
 E:\VisualStudio\Projekte\MyMath\MyMath\obj\Debug\MyMath.csprojResolveAssemblyReference.cache
+C:\repos\Test\MyMath\MyMath\bin\Debug\MyMath.dll
+C:\repos\Test\MyMath\MyMath\bin\Debug\MyMath.pdb
+C:\repos\Test\MyMath\MyMath\bin\Debug\Mathematik.pdb
+C:\repos\Test\MyMath\MyMath\obj\Debug\MyMath.csprojAssemblyReference.cache
+C:\repos\Test\MyMath\MyMath\obj\Debug\MyMath.csproj.CopyComplete
+C:\repos\Test\MyMath\MyMath\obj\Debug\MyMath.dll
+C:\repos\Test\MyMath\MyMath\obj\Debug\MyMath.pdb
