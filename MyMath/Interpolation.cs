@@ -2,7 +2,7 @@
 using Mathematik.Algorithmen;
 using Mathematik.Interfaces;
 using MyMath.Exceptions;
-using MyMath.Interfeces;
+using MyMath.Interfaces;
 using MyMath.Spline;
 using MyMath.Typen;
 using System;

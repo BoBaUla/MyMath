@@ -1,5 +1,5 @@
 ﻿using MyMath.Exceptions;
-using MyMath.Interfeces;
+using MyMath.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

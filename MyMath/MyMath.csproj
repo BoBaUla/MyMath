@@ -45,8 +45,8 @@
   <ItemGroup>
     <Compile Include="Exceptions\wrongCountOfElementsException.cs" />
     <Compile Include="Exceptions\wrongDegreeException.cs" />
-    <Compile Include="Interfeces\ASpline.cs" />
-    <Compile Include="Interfeces\ISplineCondition.cs" />
+    <Compile Include="Interfaces\ASpline.cs" />
+    <Compile Include="Interfaces\ISplineCondition.cs" />
     <Compile Include="Interpolation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplineCondition\ClampedSpline.cs" />
