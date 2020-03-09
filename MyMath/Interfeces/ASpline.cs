@@ -30,7 +30,6 @@ namespace MyMath.Interfeces
                 else
                     throw new wrongDegreeException();
             }
-
         }
 
         public int Degree { get; protected set; }
